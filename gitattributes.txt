@@ -1,0 +1,99 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# ===== BINARY FILES =====
+# Excel
+*.xlsx binary
+*.xls binary
+*.xlsm binary
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+*.ppt binary
+*.pptx binary
+
+# Data files
+*.pkl binary
+*.pickle binary
+*.h5 binary
+*.hdf5 binary
+*.db binary
+*.sqlite binary
+
+# Models
+*.pt binary
+*.pth binary
+*.onnx binary
+*.joblib binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.rar binary
+*.7z binary
+
+# ===== JUPYTER NOTEBOOKS =====
+# Merge strategy for notebooks (evita conflictos)
+*.ipynb merge=union
+
+# Opción: limpiar outputs automáticamente (requiere nbstripout)
+# *.ipynb filter=nbstripout
+
+# ===== TEXT FILES =====
+# Python
+*.py text eol=lf
+*.pyx text eol=lf
+
+# Config files
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+
+# Markdown
+*.md text eol=lf
+*.markdown text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# CSV/TSV
+*.csv text eol=lf
+*.tsv text eol=lf
+*.txt text eol=lf
+
+# R
+*.R text eol=lf
+*.r text eol=lf
+
+# SQL
+*.sql text eol=lf
+
+# ===== DOCUMENTATION =====
+*.rst text eol=lf
+LICENSE text eol=lf
+README text eol=lf
+AUTHORS text eol=lf
+CHANGELOG text eol=lf
+CONTRIBUTING text eol=lf
+
+# ===== GIT LFS (opcional) =====
+# Si decides usar Git LFS para archivos grandes
+# *.csv filter=lfs diff=lfs merge=lfs -text
+# *.zip filter=lfs diff=lfs merge=lfs -text
+# *.h5 filter=lfs diff=lfs merge=lfs -text
+# *.pkl filter=lfs diff=lfs merge=lfs -text
