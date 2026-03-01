@@ -1,0 +1,211 @@
+# ===== PYTHON =====
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+
+# ===== JUPYTER NOTEBOOKS =====
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Jupyter Notebook metadata (opcional - descomenta si quieres limpiar metadata)
+# *.ipynb
+
+# ===== DATA FILES =====
+# Excel files
+*.xlsx
+*.xls
+*.xlsm
+
+# CSV files (descomenta si son muy grandes)
+# *.csv
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Large data files
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Carpetas de datos
+data/raw/*
+!data/raw/.gitkeep
+data/external/*
+!data/external/.gitkeep
+
+# Permitir algunos archivos de ejemplo pequeños (opcional)
+!data/raw/sample_*.csv
+!data/external/README.md
+
+# ===== OUTPUTS =====
+# Modelos entrenados (suelen ser pesados)
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+models/
+outputs/models/*
+
+# Figuras generadas (opcional - podrías querer versionarlas)
+# outputs/figures/*.png
+# outputs/figures/*.jpg
+# outputs/figures/*.pdf
+
+# Logs
+*.log
+logs/
+
+# ===== OFFICE FILES =====
+# Word
+*.doc
+*.docx
+~$*.doc*
+
+# PowerPoint
+*.ppt
+*.pptx
+~$*.ppt*
+
+# PDF (opcional - descomenta si no quieres versionar PDFs)
+# *.pdf
+
+# ===== SYSTEM FILES =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ===== IDEs =====
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Jupyter
+.jupyter/
+
+# ===== R (si usas R también) =====
+.Rhistory
+.RData
+.Rproj.user
+
+# ===== ENVIRONMENT VARIABLES =====
+.env
+.env.local
+.env.*.local
+
+# ===== TEMPORARY FILES =====
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ===== CLOUD & CREDENTIALS =====
+# Credenciales
+credentials.json
+*.key
+*.pem
+secrets/
+
+# Google Cloud
+*.json
+!*requirements*.json
+
+# AWS
+.aws/
+
+# ===== LARGE FILES (Git LFS) =====
+# Si usas Git LFS, estos se trackean diferente
+# *.zip
+# *.tar.gz
+# *.rar
+
+# ===== PROJECT SPECIFIC =====
+# Archivos de configuración local
+config/local_config.yaml
+config/secrets.yaml
+
+# Carpetas de experimentación temporal
+scratch/
+experiments/temp/
+sandbox/
+
+# Archivos de caché
+.cache/
+*.cache
+
+# ===== ALLOW EMPTY FOLDERS =====
+# Mantener carpetas vacías con .gitkeep
+!.gitkeep
